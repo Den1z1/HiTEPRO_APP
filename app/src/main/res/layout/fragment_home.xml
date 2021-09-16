@@ -7,37 +7,43 @@
     tools:context=".HomeFragment"
     android:background="@drawable/gradient">
 
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/montserrat"
-        android:text="Автоматизация"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        android:textStyle="bold"
+        android:id="@+id/header"
+        style="@style/headerText"
+        android:text="Главная"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </TextView>
 
+
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="25dp"
-        android:background="@color/white"
+        android:id="@+id/clickView1"
+        style="@style/clickView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
-        te
+        <ImageView
+            android:id="@+id/homeIconInView"
+            style="@style/imageViewLogo"
+            android:src="@drawable/icon_home">
+        </ImageView>
 
+        <TextView
+            android:id="@+id/headerInView"
+            style="@style/headerTextInView"
+            android:text="Главная"
+            android:layout_toEndOf="@id/homeIconInView">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textInView"
+            style="@style/textInView"
+            android:text="Эта функция пока не доступна"
+            android:layout_below="@id/headerInView">
+        </TextView>
 
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

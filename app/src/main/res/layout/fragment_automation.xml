@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AutomationFragment">
+    tools:context=".HomeFragment"
+    android:background="@drawable/gradient">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/header"
+        style="@style/headerText"
+        android:text="Автоматизация"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
 
-</FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/clickView1"
+        style="@style/clickView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <ImageView
+            android:id="@+id/scriptsIconInView"
+            style="@style/imageViewLogo"
+            android:src="@drawable/icon_scripts">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/headerInView1"
+            style="@style/headerTextInView"
+            android:text="Сценарии"
+            android:layout_toEndOf="@id/scriptsIconInView">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textInView1"
+            style="@style/textInView"
+            android:text="Управление устройствами в автоматическом или ручном режиме, по времени или по событию"
+            android:layout_below="@id/headerInView1">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/clickView2"
+        style="@style/clickView"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickView1">
+
+        <ImageView
+            android:id="@+id/modesIconInView"
+            style="@style/imageViewLogo"
+            android:src="@drawable/icon_modes">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/headerInView2"
+            style="@style/headerTextInView"
+            android:text="Режимы"
+            android:layout_toEndOf="@id/modesIconInView">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textInView2"
+            style="@style/textInView"
+            android:text="Порядок работы системы автоматизации в разных условиях, например &quot;Я дома / Я не дома&quot;"
+            android:layout_below="@id/headerInView2">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
