@@ -11,7 +11,7 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/automationFragment2"
+        android:id="@+id/automationFragment"
         android:name="com.example.hitepro_app.AutomationFragment"
         android:label="fragment_automation"
         tools:layout="@layout/fragment_automation" />
