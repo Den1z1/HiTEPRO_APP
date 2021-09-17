@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActiveScriptsFragment"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:id="@+id/headView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/comeBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:alpha="0"></Button>
+
+        <ImageView
+            android:id="@+id/comeBackImage"
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/backed_img"></ImageView>
+
+        <TextView
+            android:id="@+id/headHeader"
+            style="@style/headerTextInView"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Все сценарии"
+            android:textColor="@color/white"
+            android:textFontWeight="500"></TextView>
+
+
+    </RelativeLayout>
+
+<!--    Думаю создать второй активити, потому что хорошо работает с viewpager2,-->
+<!--    пока что не представляю, как это можно сделать без активити, аналогично с -->
+<!--    bottom nav-->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headView"
+        app:tabIndicatorColor="@color/bottomColor1"
+        app:tabIndicatorHeight="10dp">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/headerText"
+        android:layout_marginTop="37dp"
+        android:text="Активные сценарии"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/clickView1"
+        style="@style/clickView"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <ImageView
+            android:id="@+id/iconSirenInView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_siren">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textInView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="17dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="19dp"
+            android:textSize="17dp"
+            android:text="Включить сирену,\nесли дверь открыта"
+            android:layout_toEndOf="@id/iconSirenInView">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iconAdditionInView"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/textInView1"
+            android:src=""></ImageView>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

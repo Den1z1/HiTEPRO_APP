@@ -14,7 +14,12 @@
         android:id="@+id/automationFragment"
         android:name="com.example.hitepro_app.AutomationFragment"
         android:label="fragment_automation"
-        tools:layout="@layout/fragment_automation" />
+        tools:layout="@layout/fragment_automation" >
+        <action
+            android:id="@+id/action_automationFragment_to_activeScriptsFragment"
+            app:destination="@id/activeScriptsFragment" />
+        <argument android:name="comeBack" />
+    </fragment>
     <fragment
         android:id="@+id/devicesFragment"
         android:name="com.example.hitepro_app.DevicesFragment"
@@ -25,4 +30,11 @@
         android:name="com.example.hitepro_app.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/activeScriptsFragment"
+        android:name="com.example.hitepro_app.ActiveScriptsFragment"
+        android:label="fragment_active_scripts"
+        tools:layout="@layout/fragment_active_scripts" >
+        <argument android:name="myArgs" />
+    </fragment>
 </navigation>
