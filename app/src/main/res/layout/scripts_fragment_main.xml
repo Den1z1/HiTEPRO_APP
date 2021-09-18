@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActiveScriptsFragment"
+    tools:context=".ScriptsMainFragment"
     android:background="@drawable/gradient">
 
     <RelativeLayout
@@ -105,15 +105,6 @@
             android:layout_toEndOf="@id/iconSirenInView">
         </TextView>
 
-        <ImageView
-            android:id="@+id/iconAdditionInView"
-            android:layout_width="25dp"
-            android:layout_height="15dp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/textInView1"
-            android:src=""></ImageView>
-
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

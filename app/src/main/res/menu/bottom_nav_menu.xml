@@ -2,26 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-
-        android:id="@+id/homeFragment"
+        android:id="@+id/mainHomeFragment"
         android:icon="@drawable/icon_home"
         android:fontFamily="@font/montserrat"
         android:title="Главная"/>
 
     <item
-        android:id="@+id/devicesFragment"
+        android:id="@+id/mainDevicesFragment"
         android:icon="@drawable/icon_devices"
         android:fontFamily="@font/montserrat"
         android:title="Устройства"/>
 
     <item
-        android:id="@+id/automationFragment"
+        android:id="@+id/mainAutomationFragment"
         android:icon="@drawable/icon_automation"
         android:fontFamily="@font/montserrat"
         android:title="Автоматизация"/>
 
     <item
-        android:id="@+id/settingsFragment"
+        android:id="@+id/mainSettingsFragment"
         android:icon="@drawable/icon_settings"
         android:fontFamily="@font/montserrat"
         android:title="Настройки"/>

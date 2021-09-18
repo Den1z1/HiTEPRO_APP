@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scriptsMainFragment">
+    <fragment
+        android:id="@+id/scriptsMainFragment"
+        android:name="com.example.hitepro_app.ScriptsMainFragment"
+        android:label="scripts_fragment_main"
+        tools:layout="@layout/scripts_fragment_main" />
+</navigation>
