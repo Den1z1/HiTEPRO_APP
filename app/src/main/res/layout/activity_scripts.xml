@@ -29,8 +29,7 @@
         android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -44,8 +43,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/white"
         app:tabIndicatorColor="@color/bottomColor2"
         app:tabIndicator="@drawable/rounded"
+        app:tabIndicatorAnimationMode="elastic"
         app:tabIndicatorHeight="36dp"
         app:tabIndicatorGravity="center"/>
 
