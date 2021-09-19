@@ -9,7 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-
+import kotlinx.android.synthetic.main.activity_scripts.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,12 +21,6 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR)
-        
-    }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navBottom)
-        outState.putInt("opened_fragment", bottomNavigationView.getCurrentItem())
-        super.onSaveInstanceState(outState)
     }
 }

@@ -71,4 +71,13 @@
         <item name="android:textColorSecondary">@color/black</item>
     </style>
 
+    <style name="tabText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+
+
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScriptsMainFragment"
+    tools:context=".ScriptsMainFragment1"
     android:background="@drawable/gradient">
 
     <RelativeLayout
@@ -22,7 +22,8 @@
             android:id="@+id/comeBackButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:alpha="0"></Button>
+            android:alpha="0">
+        </Button>
 
         <ImageView
             android:id="@+id/comeBackImage"
@@ -30,7 +31,8 @@
             android:layout_height="24dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/backed_img"></ImageView>
+            android:src="@drawable/backed_img">
+        </ImageView>
 
         <TextView
             android:id="@+id/headHeader"
@@ -42,35 +44,19 @@
             android:padding="0dp"
             android:text="Все сценарии"
             android:textColor="@color/white"
-            android:textFontWeight="500"></TextView>
-
+            android:textFontWeight="500">
+        </TextView>
 
     </RelativeLayout>
 
-<!--    Думаю создать второй активити, потому что хорошо работает с viewpager2,-->
-<!--    пока что не представляю, как это можно сделать без активити, аналогично с -->
-<!--    bottom nav-->
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="260dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="33dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headView"
-        app:tabIndicatorColor="@color/bottomColor1"
-        app:tabIndicatorHeight="10dp">
-    </TableLayout>
 
     <TextView
         android:id="@+id/header"
         style="@style/headerText"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="144dp"
         android:text="Активные сценарии"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+        app:layout_constraintTop_toTopOf="parent">
     </TextView>
 
     <RelativeLayout
