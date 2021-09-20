@@ -1,5 +1,7 @@
 package com.example.hitepro_app
 
+import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
@@ -17,7 +19,21 @@ class ScriptsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scripts)
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR)
 
+        backClick()
+        tabLayoutFun()
+
+    }
+
+
+    fun backClick(){
+        comeBackButton.setOnClickListener(){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
+
+    fun tabLayoutFun(){
         tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         tabLayout!!.addTab(tabLayout!!.newTab().setText("Активные"))
         tabLayout!!.addTab(tabLayout!!.newTab().setText("Неактивные"))

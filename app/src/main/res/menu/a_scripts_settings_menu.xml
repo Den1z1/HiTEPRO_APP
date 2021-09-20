@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/wtScript"
+        android:title="Посмотреть сценарий" />
+    <item
+        android:id="@+id/disScript"
+        android:title="Отключить сценарий" />
+    <item
+        android:id="@+id/histEvents"
+        android:title="История событий" />
+</menu>

@@ -1,11 +1,14 @@
 package com.example.hitepro_app
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupMenu
+import android.widget.Toast
 import kotlinx.android.synthetic.main.scripts_fragment_main1.*
 
 
@@ -23,9 +26,27 @@ class ScriptsMainFragment1 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val scriptsActivity = activity
+        val popupMenu: PopupMenu = PopupMenu(scriptsActivity,additional)
+        popupMenu.inflate(R.menu.a_scripts_settings_menu)
 
-        comeBackButton.setOnClickListener(){
-            startActivity(Intent(scriptsActivity, MainActivity::class.java))
+        popupMenu.setOnMenuItemClickListener {
+            when(it.itemId){
+                R.id.wtScript -> {
+                    Toast.makeText(scriptsActivity, "Посмотреть сценарии:D", Toast.LENGTH_SHORT).show()
+                }
+                R.id.disScript -> {
+                    Toast.makeText(scriptsActivity, "Отключить сценарии:D", Toast.LENGTH_SHORT).show()
+                }
+                R.id.histEvents -> {
+                    Toast.makeText(scriptsActivity, "История :D", Toast.LENGTH_SHORT).show()
+                }
+            }
+            false
         }
+
+        additional.setOnClickListener(){
+            popupMenu.show()
+        }
+
     }
 }

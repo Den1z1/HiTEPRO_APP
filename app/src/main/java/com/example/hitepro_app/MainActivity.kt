@@ -16,11 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR)
+        bottomNavFun()
+    }
+
+    fun bottomNavFun(){
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navBottom)
         val navController = findNavController(R.id.navHostFragment)
         bottomNavigationView.setupWithNavController(navController)
-
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR)
-
     }
 }

@@ -33,9 +33,9 @@
         <TextView
             android:id="@+id/headerInView1"
             style="@style/headerTextInView"
+            android:layout_toEndOf="@id/scriptsIconInView"
             android:text="Сценарии"
-            android:layout_toEndOf="@id/scriptsIconInView">
-        </TextView>
+            android:textFontWeight="600"></TextView>
 
         <TextView
             android:id="@+id/textInView1"
