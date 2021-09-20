@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsFragment"
+    tools:context=".MainSettingsFragment"
     android:background="@drawable/gradient">
 
 
@@ -33,6 +33,7 @@
         <TextView
             android:id="@+id/headerInView"
             style="@style/headerTextInView"
+            android:textFontWeight="600"
             android:text="Настройки"
             android:layout_toEndOf="@id/settingsIconInView">
         </TextView>
@@ -40,6 +41,7 @@
         <TextView
             android:id="@+id/textInView"
             style="@style/textInView"
+            android:lineHeight="17dp"
             android:text="Эта функция пока не доступна"
             android:layout_below="@id/headerInView">
         </TextView>

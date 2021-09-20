@@ -33,13 +33,15 @@
         <TextView
             android:id="@+id/headerInView1"
             style="@style/headerTextInView"
+            android:textFontWeight="600"
             android:layout_toEndOf="@id/scriptsIconInView"
-            android:text="Сценарии"
-            android:textFontWeight="600"></TextView>
+            android:text="Сценарии">
+        </TextView>
 
         <TextView
             android:id="@+id/textInView1"
             style="@style/textInView"
+            android:lineHeight="17dp"
             android:text="Управление устройствами в автоматическом или ручном режиме, по времени или по событию"
             android:layout_below="@id/headerInView1">
         </TextView>
@@ -64,6 +66,7 @@
         <TextView
             android:id="@+id/headerInView2"
             style="@style/headerTextInView"
+            android:textFontWeight="600"
             android:text="Режимы"
             android:layout_toEndOf="@id/modesIconInView">
         </TextView>
@@ -71,6 +74,7 @@
         <TextView
             android:id="@+id/textInView2"
             style="@style/textInView"
+            android:lineHeight="17dp"
             android:text="Порядок работы системы автоматизации в разных условиях, например &quot;Я дома / Я не дома&quot;"
             android:layout_below="@id/headerInView2">
         </TextView>

@@ -1,6 +1,8 @@
 package com.example.hitepro_app
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -25,26 +27,31 @@ class ScriptsMainFragment1 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val dialog = CustomDialogFragment()
+
+
         val scriptsActivity = activity
         val popupMenu: PopupMenu = PopupMenu(scriptsActivity,additional)
         popupMenu.inflate(R.menu.a_scripts_settings_menu)
 
+
         popupMenu.setOnMenuItemClickListener {
             when(it.itemId){
                 R.id.wtScript -> {
-                    Toast.makeText(scriptsActivity, "Посмотреть сценарии:D", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(scriptsActivity, "Нажмите на отключить сценарий, чтобы посмотреть на Custom view", Toast.LENGTH_LONG).show()
                 }
                 R.id.disScript -> {
-                    Toast.makeText(scriptsActivity, "Отключить сценарии:D", Toast.LENGTH_SHORT).show()
+                    dialog.show(scriptsActivity!!.supportFragmentManager, "customDialog")
+
                 }
                 R.id.histEvents -> {
-                    Toast.makeText(scriptsActivity, "История :D", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(scriptsActivity, "Нажмите на отключить сценарий, чтобы посмотреть на Custom view", Toast.LENGTH_LONG).show()
                 }
             }
             false
         }
 
-        additional.setOnClickListener(){
+        additionalButton.setOnClickListener(){
             popupMenu.show()
         }
 

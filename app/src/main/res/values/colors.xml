@@ -3,7 +3,7 @@
     <color name="bottomColor1">#0062FF</color>
     <color name="bottomColor2">#3396FF</color>
     <color name="lineColor">#D8D8D8</color>
-    <color name="textViewColor">#1E3966</color>
+    <color name="popupColor">#1E3966</color>
     <color name="grayForText">#AAAAAA</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>

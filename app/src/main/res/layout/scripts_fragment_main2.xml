@@ -14,39 +14,9 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="Неактивные сценарии"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
 
-    <RelativeLayout
-        android:id="@+id/clickView1"
-        style="@style/clickView"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
 
-        <ImageView
-            android:id="@+id/iconSirenInView"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/icon_siren">
-        </ImageView>
-
-        <TextView
-            android:id="@+id/textInView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
-            android:layout_toEndOf="@id/iconSirenInView"
-            android:fontFamily="@font/montserrat"
-            android:paddingTop="19dp"
-            android:paddingEnd="5dp"
-            android:paddingBottom="20dp"
-            android:text="Включить сирену,\nесли дверь открыта"
-            android:textColor="@color/black"
-            android:textSize="17dp"></TextView>
-
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

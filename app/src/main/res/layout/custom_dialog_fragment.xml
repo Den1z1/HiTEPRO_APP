@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomDialogFragment">
+    tools:context=".CustomDialogFragment"
+    android:background="@color/white">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -21,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textInfo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -31,7 +32,7 @@
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <View
         android:id="@+id/horizontalLine"
@@ -39,25 +40,24 @@
         android:layout_height="1dp"
         android:layout_marginTop="35dp"
         android:background="@color/lineColor"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/textInfo"
+        app:layout_constraintStart_toStartOf="@+id/textInfo"
+        app:layout_constraintTop_toBottomOf="@+id/textInfo" />
 
     <View
         android:id="@+id/verticalLine"
         android:layout_width="1dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@color/lineColor"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textInfo"
         app:layout_constraintTop_toBottomOf="@+id/horizontalLine"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textInfo"
         tools:layout_editor_absoluteY="-19dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textDelete"
         android:layout_width="175dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:textColor="@color/red"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
@@ -67,15 +67,15 @@
         app:layout_constraintTop_toTopOf="@+id/verticalLine" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textСancel"
         android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:textColor="@color/red"
+        android:layout_height="50dp"
+        android:textColor="@color/popupColor"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="Удалить"
+        android:text="Отменить"
         android:textSize="18dp"
-        app:layout_constraintStart_toEndOf="@+id/verticalLine"
+        app:layout_constraintEnd_toStartOf="@+id/verticalLine"
         app:layout_constraintTop_toTopOf="@+id/verticalLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
