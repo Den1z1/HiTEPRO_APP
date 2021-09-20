@@ -18,7 +18,7 @@
         <item name="android:textSize">14dp</item>
     </style>
 
-
+    <!--MainStyles-->
     <style name="headerText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -27,9 +27,8 @@
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">25dp</item>
+        <item name="android:textSize">24dp</item>
     </style>
-
 
     <style name="clickView">
         <item name="android:layout_width">match_parent</item>
@@ -45,7 +44,7 @@
         <item name="android:layout_width">19dp</item>
         <item name="android:layout_height">19dp</item>
         <item name="android:layout_marginStart">29dp</item>
-        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_marginTop">20dp</item>
     </style>
 
     <style name="headerTextInView">
@@ -55,7 +54,7 @@
         <item name="android:paddingTop">16dp</item>
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">19dp</item>
     </style>
 
     <style name="textInView">
@@ -66,7 +65,7 @@
         <item name="android:paddingBottom">20dp</item>
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textColor">@color/grayForText</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">14dp</item>
     </style>
 
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
@@ -78,15 +77,36 @@
         <item name="android:textColor">@color/bottomColor1</item>
     </style>
 
+
+    <!--ScriptsStyles-->
+    <style name="imageInViewScripts">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+    <style name="textInViewScripts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">17dp</item>
+        <item name="android:paddingTop">19dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingEnd">70dp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
     <style name="tabText" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">14dp</item>
         <item name="android:padding">2dp</item>
     </style>
 
     <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
-        <item name="dialogCornerRadius">16dp</item>
+        <item name="dialogCornerRadius">8dp</item>
     </style>
 
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScriptsMainFragment1"
+    tools:context=".ScriptsActivityAndFragments.ScriptsMainFragment1"
     android:background="@drawable/gradient">
 
     <TextView
@@ -12,7 +12,6 @@
         style="@style/headerText"
         android:layout_marginTop="144dp"
         android:text="Активные сценарии"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
@@ -27,28 +26,16 @@
 
         <ImageView
             android:id="@+id/iconSirenInView"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"
+            style="@style/imageInViewScripts"
             android:src="@drawable/icon_siren">
         </ImageView>
 
         <TextView
             android:id="@+id/textInView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
+            style="@style/textInViewScripts"
             android:layout_toEndOf="@id/iconSirenInView"
-            android:fontFamily="@font/montserrat"
             android:lineHeight="19dp"
-            android:paddingTop="19dp"
-            android:paddingEnd="70dp"
-            android:paddingBottom="20dp"
-            android:text="Включить сирену, если дверь открыта"
-            android:textColor="@color/black"
-            android:textSize="17dp">
-
+            android:text="Включить сирену, если дверь открыта">
         </TextView>
 
         <Button
@@ -68,7 +55,8 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="23dp"
-            android:src="@drawable/icon_additional" />
+            android:src="@drawable/icon_additional">
+        </ImageView>
 
     </RelativeLayout>
 

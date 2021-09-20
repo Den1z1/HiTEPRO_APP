@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScriptsMainFragment2"
+    tools:context=".ScriptsActivityAndFragments.ScriptsMainFragment2"
     android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/header"
         style="@style/headerText"
         android:layout_marginTop="144dp"
-        android:fontFamily="@font/montserrat_bold"
         android:text="Неактивные сценарии"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

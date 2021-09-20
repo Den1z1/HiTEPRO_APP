@@ -1,9 +1,5 @@
-package com.example.hitepro_app
+package com.example.hitepro_app.ScriptsActivityAndFragments
 
-import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
 import android.widget.Toast
+import com.example.hitepro_app.CustomDialogs.CustomDialogFragment
+import com.example.hitepro_app.R
 import kotlinx.android.synthetic.main.scripts_fragment_main1.*
 
 

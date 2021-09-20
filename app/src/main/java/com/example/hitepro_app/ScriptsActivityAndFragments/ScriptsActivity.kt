@@ -1,15 +1,13 @@
-package com.example.hitepro_app
+package com.example.hitepro_app.ScriptsActivityAndFragments
 
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContextCompat
-import androidx.core.content.res.ResourcesCompat
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
+import com.example.hitepro_app.MainActivityAndFragments.MainActivity
+import com.example.hitepro_app.R
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_scripts.*
 
 class ScriptsActivity : AppCompatActivity() {

@@ -6,7 +6,7 @@
     app:startDestination="@id/scriptsMainFragment1">
     <fragment
         android:id="@+id/scriptsMainFragment1"
-        android:name="com.example.hitepro_app.ScriptsMainFragment1"
+        android:name="com.example.hitepro_app.ScriptsActivityAndFragments.ScriptsMainFragment1"
         android:label="scripts_fragment_main1"
         tools:layout="@layout/scripts_fragment_main1" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/scriptsMainFragment2"
-        android:name="com.example.hitepro_app.ScriptsMainFragment2"
+        android:name="com.example.hitepro_app.ScriptsActivityAndFragments.ScriptsMainFragment2"
         android:label="scripts_fragment_main2"
         tools:layout="@layout/scripts_fragment_main2" >
         <argument

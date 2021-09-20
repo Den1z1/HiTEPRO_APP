@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiTEPRO_APP">
         <activity
-            android:name=".ScriptsActivity"
+            android:name=".ScriptsActivityAndFragments.ScriptsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityAndFragments.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
